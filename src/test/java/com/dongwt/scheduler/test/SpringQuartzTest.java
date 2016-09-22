@@ -18,5 +18,15 @@ public class SpringQuartzTest {
             e.printStackTrace();
         }
     }
+    
+    @Test
+    public void springTest(){
+        try {
+            Thread.sleep(1000*60);
+        }
+        catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 
 }
