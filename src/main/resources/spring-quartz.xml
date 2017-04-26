@@ -46,14 +46,4 @@
 
 	<!-- 工作的bean -->
 	<bean id="myJob" class="com.dongwt.scheduler.job.MyJob" />
-
-
-
-
-	<!-- spring self -->
-	<context:component-scan base-package="com.dongwt.scheduler" />
-	<!-- 启用注解驱动的定时任务 -->
-	<task:annotation-driven scheduler="myScheduler" />
-	<!-- 配置定时任务的线程池 -->
-	<task:scheduler id="myScheduler" pool-size="5" />
 </beans>

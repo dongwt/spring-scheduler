@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 @Component  
 public class SpringJob {
-    @Scheduled(cron="*/1 * * * * ?")    
+    @Scheduled(cron="0/5 * * * * ?")
     public void task(){   
         SimpleDateFormat format=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         System.out.println("spring date:" + format.format(new Date()));  
